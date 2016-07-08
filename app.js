@@ -1,15 +1,73 @@
+var pieces = 70,
+    speed = 1,
+    pieceW = 30,
+    pieceH = 30;
+
+
+for (var i = pieces - 1; i >= 0; i--) {
+  $('#popup').prepend('<div class="piece" style="width:'+pieceW+'px; height:'+pieceH+'px"></div>');
+};
+
+function breakGlass(from){
+  if (from === "reverse"){
+    $('.piece').each(function(){
+      TweenLite.to($(this), speed, {x:0, y:0, rotationX:0, rotationY:0, opacity: 1, z: 0});
+      TweenLite.to($('#popup h1'),0.2,{opacity:1, delay: speed});
+    });
+    return;
+  }
+
+  if(!from){
+    TweenLite.to($('#popup h1'),0.2,{opacity:0});
+  } else {
+    TweenLite.from($('#popup h1'),0.5,{opacity:0, delay: speed});
+  }
+
+  $('.piece').each(function(){
+    var distX = getRandomArbitrary(-250, 250),
+        distY = getRandomArbitrary(-250, 250),
+        rotY  = getRandomArbitrary(-720, 720),
+        rotX  = getRandomArbitrary(-720, 720),
+        z = getRandomArbitrary(-500, 500);
+
+    if(!from){
+      TweenLite.to($(this), speed, {x:distX, y:distY, rotationX:rotX, rotationY:rotY, opacity: 0, z: z});
+    } else {
+      TweenLite.from($(this), speed, {x:distX, y:distY, rotationX:rotX, rotationY:rotY, opacity: 0, z: z});
+    }
+  });
+}
+
+function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+
+$('.piece, h1').click(function(){
+  breakGlass();
+});
+$('.reverse').click(function(){
+  breakGlass('reverse');
+});
+
+breakGlass(true);
+
 $(document).ready(function(){
     console.log("Work complete!");
-    $("p").mousedown(function(event){
+    $(".boop").mousedown(function(event){
       event.preventDefault();
       var hueHueHue = 'rgb(' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ')';
       $(this).css("color", hueHueHue)
       // $("#boop").css()
     })
-    $("p").mouseup(function(event){
+    $(".boop").mouseup(function(event){
       event.preventDefault();
       var hueHueHue = 'rgb(' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ')';
       $(this).css("color", hueHueHue)
       // $("#boop").css()
+    })
+    $("#transfrorm").on("submit", function(event){
+      event.preventDefault();
+      console.log("TRUE BUTTON ACQUIRED, ADVENTURER!")
     })
 })
