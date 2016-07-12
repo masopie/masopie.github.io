@@ -18,11 +18,10 @@
 	height: auto;
 	top: 50%; left: 50%;
 	margin-left: -150px; margin-top: -100px;
-
 	-webkit-perspective: 800px;
-  	-webkit-perspective-origin: 50% 50px;
-   perspective: 800px;
-   perspective-origin: 50% 50px;
+  -webkit-perspective-origin: 50% 50px;
+    perspective: 800px;
+    perspective-origin: 50% 50px;
 }
 
 .piece {
