@@ -1,3 +1,5 @@
+//  To break "glass" div
+
 var pieces = 70,
     speed = 1,
     pieceW = 30,
@@ -52,28 +54,33 @@ $('.reverse').click(function(){
 
 breakGlass(true);
 
+// To change text color:
 $(document).ready(function(){
     console.log("Work complete!");
-    $(".boop").mousedown(function(event){
-      event.preventDefault();
+    setInterval(function() {
+      //  Random color
       var hueHueHue = 'rgb(' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ')';
-      $(this).css("color", hueHueHue)
-      // $("#boop").css()
-    })
-    $(".boop").mouseup(function(event){
-      event.preventDefault();
-      var hueHueHue = 'rgb(' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ')';
-      $(this).css("color", hueHueHue)
-      // $("#boop").css()
-    })
+      //  Change
+      $(".boop").css( { color: hueHueHue } )
+    }, 3);
+    // $(".boop").mousedown(function(event){
+    //   event.preventDefault();
+    //   var hueHueHue = 'rgb(' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ')';
+    //   $(this).css("color", hueHueHue)
+    // })
+    // $(".boop").mouseup(function(event){
+    //   event.preventDefault();
+    //   var hueHueHue = 'rgb(' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ')';
+    //   $(this).css("color", hueHueHue)
+    // })
     $(".reverse").mouseup(function(event){
       event.preventDefault();
       var hueHueHue = 'rgb(' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ')';
       $(this).css("color", hueHueHue)
-      // $("#boop").css()
     })
-    $("#transfrorm").on("submit", function(event){
-      event.preventDefault();
-      console.log("TRUE BUTTON ACQUIRED, ADVENTURER!")
-    })
+
+    // $("#transfrorm").on("submit", function(event){
+    //   event.preventDefault();
+    //   console.log("TRUE BUTTON ACQUIRED, ADVENTURER!")
+    // })
 })
