@@ -1,7 +1,7 @@
 //  To break "glass" div
 
-var pieces = 70,
-    speed = 1,
+var pieces = 160,
+    speed = 1.1,
     pieceW = 30,
     pieceH = 30;
 
