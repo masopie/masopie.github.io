@@ -8,7 +8,7 @@
 #wrap {
 	position: absolute;
 	top: 0; left: 0; right: 0; bottom: 0;
-	/*background-color: #333;*/
+	background-color: #333;
 	overflow: hidden;
 }
 
@@ -25,7 +25,8 @@
 }
 
 .piece {
-	background: rgba(255,144,222,0.5);
+  /* Gray like a building! */
+	background: rgba(152,152,152,0.75);
 	float: left;
 }
 
