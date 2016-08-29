@@ -12,6 +12,15 @@
 	overflow: hidden;
 }
 
+#buildingsBG {
+  position: absolute;
+  top: 100px; left: 300px;
+  width: 200px;
+  background-color: #989898;
+  layer-background-color: blue;
+  border: thin solid black;
+}
+
 #popup {
 	position: absolute;
 	width: 300px;
