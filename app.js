@@ -1,5 +1,4 @@
 //  To break "glass" div
-
 var pieces = 160,
     speed = 1.1,
     pieceW = 30,
