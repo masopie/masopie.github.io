@@ -5,11 +5,26 @@
 	padding: 0;
 }
 
-#groundBG {
+/*#groundBG {
 	position: absolute;
 	top: 0; left: 0; right: 0; bottom: 0;
 	background-color: #333;
 	overflow: hidden;
+}*/
+
+#skyBG {
+  position: absolute;
+  top: 0%; left: -1%;
+  background-color: #caf8ff;
+  height: 48%;
+  width: 1500%;
+}
+
+#cloudsBG {
+  position: absolute;
+  top: 48%;
+  width: 1500%;
+  background-color: #fff;
 }
 
 #buildingsBG {
@@ -26,17 +41,19 @@
   position: absolute;
   background-color: #000000;
   top: 88%; left: -1%;
-  height: 10%;
+  height: 12%;
   width: 1500%;
 }
 
 #roadSurfaceMarking {
+  position: relative;
   border:none;
+  top: 49%;
   border-top:5px dotted #fff500;
   color:#fff;
   /*background-color:#fff;*/
   height:1px;
-  width:50%;
+  width: 100%;
 }
 
 #popup {
