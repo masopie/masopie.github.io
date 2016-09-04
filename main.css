@@ -14,11 +14,29 @@
 
 #buildingsBG {
   position: absolute;
-  top: 100px; left: 300px;
-  width: 200px;
+  top: 60%; left: -1%;
+  width: 150%;
+  height: 30%;
   background-color: #989898;
-  layer-background-color: blue;
-  border: thin solid black;
+  /*layer-background-color: blue;*/
+  /*border: thin solid black;*/
+}
+
+#roadBG {
+  position: absolute;
+  background-color: #000000;
+  top: 90%;
+  height: 10%;
+  width: 150%;
+}
+
+#median {
+  border:none;
+  border-top:1px dotted #f00;
+  color:#fff;
+  background-color:#fff;
+  height:1px;
+  width:50%;
 }
 
 #popup {
@@ -33,9 +51,10 @@
     perspective-origin: 50% 50px;
 }
 
+/* Main "building" */
 .piece {
   /* Gray like a building! */
-	background: rgba(152,152,152,0.75);
+	background: #585858;
 	float: left;
 }
 
