@@ -15,7 +15,7 @@
 #buildingsBG {
   position: absolute;
   top: 60%; left: -1%;
-  width: 150%;
+  width: 1500%;
   height: 30%;
   background-color: #989898;
   /*layer-background-color: blue;*/
@@ -25,19 +25,19 @@
 #roadBG {
   position: absolute;
   background-color: #000000;
-  top: 88%;
+  top: 88%; left: -1%;
   height: 10%;
-  width: 150%;
+  width: 1500%;
 }
 
-#median {
+/*#median {
   border:none;
   border-top:1px dotted #f00;
   color:#fff;
   background-color:#fff;
   height:1px;
   width:50%;
-}
+}*/
 
 #popup {
 	position: absolute;
