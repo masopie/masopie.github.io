@@ -25,7 +25,7 @@
 #roadBG {
   position: absolute;
   background-color: #000000;
-  top: 90%;
+  top: 88%;
   height: 10%;
   width: 150%;
 }
@@ -56,6 +56,8 @@
   /* Gray like a building! */
 	background: #585858;
 	float: left;
+  /*if border is added ('windows'), decrease piece count */
+  /*border: .001px dotted #fff;*/
 }
 
 #popup p {
