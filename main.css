@@ -30,14 +30,14 @@
   width: 1500%;
 }
 
-/*#median {
+#roadSurfaceMarking {
   border:none;
-  border-top:1px dotted #f00;
+  border-top:5px dotted #fff500;
   color:#fff;
-  background-color:#fff;
+  /*background-color:#fff;*/
   height:1px;
   width:50%;
-}*/
+}
 
 #popup {
 	position: absolute;
