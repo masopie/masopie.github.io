@@ -1,0 +1,33 @@
+body{
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+#overall_mask{
+  position: absolute;
+  height: 1920px;
+  width: 1080px;
+}
+
+#top_mask{
+  position: absolute;
+}
+
+#main_img {
+  position: absolute;
+}
+
+.mattressFrame{
+  position: absolute;
+  left: 2px;
+  top: 820px;
+  width: 1077px;
+  opacity: 0;
+}
+
+#frame000{
+  opacity: 1;
+}

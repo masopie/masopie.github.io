@@ -1,0 +1,82 @@
+@font-face {
+    font-family: SharpSans;
+    src: url("sharp_sans_display_no1/SharpSansDispNo1-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Sharp-Sans;
+    font-weight: bold;
+    src: url("sharp_sans_display_no1/SharpSansDispNo1-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Sharp-Sans-Light;
+    src: url("sharp_sans_display_no1/SharpSansDispNo1-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Sharp-Sans-Semibold;
+    src: url("sharp_sans_display_no1/SharpSansDispNo1-Semibold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Muli-Regular;
+    src: url("muli/Muli-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: Muli-Bold;
+    src: url("muli/Muli-Bold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: Muli-Extra-Bold;
+    src: url("muli/Muli-ExtraBold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: Muli-Black;
+  src: url("muli/Muli-Black.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: Muli-SemiBold;
+  src: url("muli/Muli-SemiBold.ttf") format("opentype");
+}
+
+body{
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+#overall_mask{
+  position: absolute;
+  width: 1080px;
+  height: 1920px;
+  top: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 4;
+}
+
+#topMask{
+  position: absolute;
+  z-index: 3;
+  left: 0px;
+  top: 0px;
+  border-bottom: 1px solid #616161;
+}
+
+#cta{
+  position: absolute;
+  z-index: 5;
+  left: 89px;
+  top: 589px;
+  width: 424px;
+  height: 143px;
+  /*font-family: Sharp-Sans;*/
+  font-family: "Muli";
+}

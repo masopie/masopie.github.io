@@ -1,0 +1,709 @@
+@font-face {
+    font-family: SharpSans;
+    src: url("sharp_sans_display_no1/SharpSansDispNo1-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Sharp-Sans;
+    font-weight: bold;
+    src: url("sharp_sans_display_no1/SharpSansDispNo1-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Sharp-Sans-Light;
+    src: url("sharp_sans_display_no1/SharpSansDispNo1-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Sharp-Sans-Semibold;
+    src: url("sharp_sans_display_no1/SharpSansDispNo1-Semibold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Muli-Regular;
+    src: url("muli/Muli-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: Muli-Bold;
+    src: url("muli/Muli-Bold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: Muli-Extra-Bold;
+    src: url("muli/Muli-ExtraBold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: Muli-Black;
+  src: url("muli/Muli-Black.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: Muli-SemiBold;
+  src: url("muli/Muli-SemiBold.ttf") format("opentype");
+}
+
+
+
+body{
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+#backButton{
+  position: absolute;
+  left: 8px;
+  top: 43px;
+  width: 310px;
+  height: 60px;
+  z-index: 1;
+}
+
+#topMask{
+  position: absolute;
+  z-index: 3;
+  left: 0px;
+  top: 0px;
+  border-bottom: 1px solid #616161;
+}
+
+#mainBannerTop{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1080px;
+  height: 1920px;
+  z-index: 1;
+}
+
+#mainBannerBlur{
+  position: absolute;
+  left: 0px;
+  top: 528px;
+  width: 1080px;
+  z-index: 1;
+  opacity: 0;
+}
+
+.leftColumn{
+  left: 188px;
+  width: 329px;
+}
+
+.rightColumn{
+  left: 619px;
+  width: 329px;
+}
+
+.whiteBorderLeftColumn{
+  position: absolute;
+  left: 125px;
+  width: 371px;
+  height: 195px;
+  /* border: 2px solid white; */
+  border-radius: 6px;
+  z-index: 5;
+}
+
+.whiteBorderRightColumn{
+  position: absolute;
+  left: 581px;
+  width: 369px;
+  height: 195px;
+  /* border: 2px solid white; */
+  border-radius: 6px;
+  z-index: 5;
+}
+
+#whiteBorder1{
+  top: 594px;
+}
+
+#whiteBorder3{
+  top: 851px;
+}
+
+#whiteBorder5{
+  top: 1106px;
+}
+
+#whiteBorder7{
+  top: 1360px;
+}
+
+#whiteBorder9{
+  top: 1615px;
+}
+
+#whiteBorder2{
+  top: 594px;
+}
+
+#whiteBorder4{
+  top: 851px;
+}
+
+#whiteBorder6{
+  top: 1106px;
+}
+
+#whiteBorder8{
+  top: 1360px;
+}
+
+#whiteBorder10{
+  top: 1615px;
+}
+
+#mask1 {
+  position: absolute;
+  left: 81px;
+  top: 539px;
+  width: 905px;
+  height: 560px;
+  /* border: 2px solid; */
+  border-radius: 20px;
+  z-index:10;
+  overflow:hidden;
+}
+
+#blurredBanner1 {
+  position: a
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  /* display: block; */
+  background-image: url('../img/banner_1.jpg');
+  background-repeat:  no-repeat;
+  /* padding-left: 20%;
+  padding-top: 20%; */
+  z-index: 1;
+  -webkit-filter: blur(2px);
+}
+
+
+
+/* Begin expanded whiteBorder1 */
+#expanded1{
+  position: absolute;
+  left: 278px;
+  top: 629px;
+  /* z-index: 1; */
+  width: 0px;
+  height: 0px;
+}
+
+#expandedImg1{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0px;
+  z-index: 1;
+}
+
+#expandedText1{
+  position: relative;
+  left: -24px;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  z-index: 1000;
+}
+
+#icon1{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+#closeButton1{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 55px;
+  height: 52px;
+  z-index: 5000;
+  opacity: 0;
+}
+/* End expanded whiteBorder1 */
+
+/* Begin expanded whiteBorder2 */
+#expanded2{
+  position: absolute;
+  left: 728px;
+  top: 629px;
+  /* z-index: 1; */
+  width: 0px;
+  height: 0px;
+}
+
+#expandedImg2{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0px;
+  z-index: 1;
+}
+
+#expandedText2{
+  position: relative;
+  left: -24px;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  z-index: 1000;
+}
+
+#icon2{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+#closeButton2{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 55px;
+  height: 52px;
+  z-index: 5000;
+  opacity: 0;
+}
+/* End expanded whiteBorder2 */
+
+/* Begin expanded whiteBorder3 */
+#expanded3{
+  position: absolute;
+  left: 246px;
+  top: 881px;
+  /* z-index: 1; */
+  width: 0px;
+  height: 0px;
+}
+
+#expandedImg3{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0px;
+  z-index: 1;
+}
+
+#expandedText3{
+  position: relative;
+  left: -24px;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  z-index: 1000;
+}
+
+#icon3{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+#closeButton3{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 55px;
+  height: 52px;
+  z-index: 5000;
+  opacity: 0;
+}
+/* End expanded whiteBorder3 */
+
+/* Begin expanded whiteBorder4 */
+#expanded4{
+  position: absolute;
+  left: 728px;
+  top: 881px;
+  /* z-index: 1; */
+  width: 0px;
+  height: 0px;
+}
+
+#expandedImg4{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0px;
+  z-index: 1;
+}
+
+#expandedText4{
+  position: relative;
+  left: -24px;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  z-index: 1000;
+}
+
+#icon4{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+#closeButton4{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 55px;
+  height: 52px;
+  z-index: 5000;
+  opacity: 0;
+}
+/* End expanded whiteBorder4 */
+
+/* Begin expanded whiteBorder5 */
+#expanded5{
+  position: absolute;
+  left: 246px;
+  top: 1150px;
+  /* z-index: 1; */
+  width: 0px;
+  height: 0px;
+}
+
+#expandedImg5{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0px;
+  z-index: 1;
+}
+
+#expandedText5{
+  position: relative;
+  left: -24px;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  z-index: 1000;
+}
+
+#icon5{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+#closeButton5{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 55px;
+  height: 52px;
+  z-index: 5000;
+  opacity: 0;
+}
+/* End expanded whiteBorder5 */
+
+/* Begin expanded whiteBorder6 */
+#expanded6{
+  position: absolute;
+  left: 728px;
+  top: 1150px;
+  /* z-index: 1; */
+  width: 0px;
+  height: 0px;
+}
+
+#expandedImg6{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0px;
+  z-index: 1;
+}
+
+#expandedText6{
+  position: relative;
+  left: -24px;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  z-index: 1000;
+}
+
+#icon6{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+#closeButton6{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 55px;
+  height: 52px;
+  z-index: 5000;
+  opacity: 0;
+}
+/* End expanded whiteBorder6 */
+
+/* Begin expanded whiteBorder7 */
+#expanded7{
+  position: absolute;
+  left: 246px;
+  top: 1400px;
+  /* z-index: 1; */
+  width: 0px;
+  height: 0px;
+}
+
+#expandedImg7{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0px;
+  z-index: 1;
+}
+
+#expandedText7{
+  position: relative;
+  left: -24px;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  z-index: 1000;
+}
+
+#icon7{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+#closeButton7{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 55px;
+  height: 52px;
+  z-index: 5000;
+  opacity: 0;
+}
+/* End expanded whiteBorder7 */
+
+/* Begin expanded whiteBorder8 */
+#expanded8{
+  position: absolute;
+  left: 728px;
+  top: 1400px;
+  /* z-index: 1; */
+  width: 0px;
+  height: 0px;
+}
+
+#expandedImg8{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0px;
+  z-index: 1;
+}
+
+#expandedText8{
+  position: relative;
+  left: -24px;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  z-index: 1000;
+}
+
+#icon8{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+#closeButton8{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 55px;
+  height: 52px;
+  z-index: 5000;
+  opacity: 0;
+}
+/* End expanded whiteBorder8 */
+
+/* Begin expanded whiteBorder9 */
+#expanded9{
+  position: absolute;
+  left: 246px;
+  top: 1660px;
+  /* z-index: 1; */
+  width: 0px;
+  height: 0px;
+}
+
+#expandedImg9{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0px;
+  z-index: 1;
+}
+
+#expandedText9{
+  position: relative;
+  left: -24px;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  z-index: 1000;
+}
+
+#icon9{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+#closeButton9{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 55px;
+  height: 52px;
+  z-index: 5000;
+  opacity: 0;
+}
+/* End expanded whiteBorder9 */
+
+/* Begin expanded whiteBorder10 */
+#expanded10{
+  position: absolute;
+  left: 728px;
+  top: 1660px;
+  /* z-index: 1; */
+  width: 0px;
+  height: 0px;
+}
+
+#expandedImg10{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0px;
+  z-index: 1;
+}
+
+#expandedText10{
+  position: relative;
+  left: -24px;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  z-index: 1000;
+}
+
+#icon10{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+#closeButton10{
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 55px;
+  height: 52px;
+  z-index: 5000;
+  opacity: 0;
+}
+/* End expanded whiteBorder10 */
+
+
+
+
+
+/* Start-of-the-ISI */
+.scrollable{
+  z-index: 5000;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Muli-SemiBold";
+  font-size: 28px;
+  color: #000000;
+}
+
+/* ::-webkit-scrollbar-track-piece:start {
+    background: transparent url('../img/scrollbar_thumb.png') repeat-y !important;
+    background: transparent url('../img/scrollbar_thumb.png') !important;
+}
+
+::-webkit-scrollbar-track-piece:end {
+    background: transparent url('../img/scrollbar_thumb.png') !important;
+} */
+
+/* Scrollbar */
+.scrollable::-webkit-scrollbar {
+  width: 15px;
+  margin-top: 10px
+}
+
+/* Track */
+.scrollable::-webkit-scrollbar-track {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 4px 90%;
+}
+
+/* Handle */
+.scrollable::-webkit-scrollbar-thumb {
+  height: 25px;
+  background-color: #FFFFFF;
+  /* background: url('../img/scrollbar_thumb.png') !important; */
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 3px solid transparent;
+  background-clip: content-box;
+  border-radius: 20px;
+}
+/* End-of-the-ISI */
