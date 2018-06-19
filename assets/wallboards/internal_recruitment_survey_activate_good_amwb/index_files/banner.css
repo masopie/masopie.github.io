@@ -1,0 +1,242 @@
+@font-face {
+    font-family: SharpSans;
+    src: url("sharp_sans_display_no1/SharpSansDispNo1-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Sharp-Sans;
+    font-weight: bold;
+    src: url("sharp_sans_display_no1/SharpSansDispNo1-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Sharp-Sans-Light;
+    src: url("sharp_sans_display_no1/SharpSansDispNo1-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Sharp-Sans-Semibold;
+    src: url("sharp_sans_display_no1/SharpSansDispNo1-Semibold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Muli-Regular;
+    src: url("muli/Muli-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: Muli-Bold;
+    src: url("muli/Muli-Bold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: Muli-Extra-Bold;
+    src: url("muli/Muli-ExtraBold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: Muli-Black;
+  src: url("muli/Muli-Black.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: Muli-SemiBold;
+  src: url("muli/Muli-SemiBold.ttf") format("opentype");
+}
+
+
+
+body{
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+#overall_mask{
+  position: absolute;
+  width: 1080px;
+  height: 1920px;
+  top: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 5;
+}
+
+#topMask{
+  position: absolute;
+  z-index: 4;
+  left: 0px;
+  top: 0px;
+  border-bottom: 1px solid #616161;
+}
+
+#topText{
+  position: absolute;
+  z-index: 4;
+  left: 93px;
+  top: 202px;
+  width: 937px;
+  height: 228px;
+  font-family: Sharp-Sans;
+  /*font-family: "Muli";*/
+}
+
+#topTextHeader{
+  position: absolute;
+  left: 11px;
+  top: -17px;
+  font-size: 88.5px;
+   color: #2BD0B4;
+}
+
+#topTextBody1{
+  position: absolute;
+  left: 51px;
+  top: 116px;
+  width: 800px;
+  font-size: 37px;
+  letter-spacing: -0.5px;
+  line-height: 139%;
+  font-family: Sharp-Sans-Semibold;
+  font-weight: 600;
+  color: #3C2074;
+}
+
+#topTextBody2{
+  position: absolute;
+  left: 17px;
+  top: 165px;
+  width: 861px;
+  font-size: 37px;
+  letter-spacing: -0.3px;
+  line-height: 139%;
+  font-family: Sharp-Sans-Semibold;
+  font-weight: 600;
+  color: #3C2074;
+}
+
+#ctaText{
+  position: absolute;
+  z-index: 4;
+  left: 189px;
+  top: 552px;
+  width: 767px;
+  height: 195px;
+  /*font-family: Sharp-Sans;*/
+  font-family: "Muli";
+}
+
+#ctaTextHeader{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 10px;
+}
+
+#ctaTextText{
+  position: absolute;
+  left: 32px;
+  top: -2px;
+  font-size: 42px;
+  color: white;
+  font-family: Muli-Bold;
+}
+
+#ctaTextMessage{
+  position: absolute;
+  left: 139px;
+  top: -11px;
+  font-size: 58px;
+  color: #2BD0B4;
+  font-family: Muli-Extra-Bold;
+}
+
+#ctaTextTo{
+  position: absolute;
+  left: 474px;
+  top: -7px;
+  font-size: 46px;
+  color: white;
+  font-family: Muli-Bold;
+}
+
+#ctaTextNumber{
+  position: absolute;
+  left: 539px;
+  top: -11px;
+  font-size: 58px;
+  color: #2BD0B4;
+  font-family: Muli-Extra-Bold;
+}
+
+#ctaTextBody1{
+  position: absolute;
+  left: -14px;
+  top: 61px;
+  width: 815px;
+  font-size: 38px;
+  letter-spacing: -1px;
+  line-height: 139%;
+  color: white;
+  font-family: Muli-SemiBold;
+}
+
+#ctaTextBodyEarn{
+  position: absolute;
+  left: 0px;
+  top: 114px;
+  width: 800px;
+  font-size: 38px;
+  letter-spacing: -1px;
+  line-height: 139%;
+  color: white;
+  font-family: Muli-SemiBold;
+}
+
+#ctaTextBodyDollars{
+  position: absolute;
+  left: 89px;
+  top: 115px;
+  width: 800px;
+  font-size: 38px;
+  letter-spacing: -1px;
+  line-height: 139%;
+  color: white;
+  font-family: Muli-Black;
+}
+
+#ctaTextBody3{
+  position: absolute;
+  left: 166px;
+  top: 112px;
+  width: 800px;
+  font-size: 38px;
+  letter-spacing: -1px;
+  line-height: 139%;
+  color: white;
+  font-family: Muli-SemiBold;
+}
+
+#mainBanner{
+  position: absolute;
+  z-index: 1;
+  overflow-x: hidden;
+  top: 0px;
+}
+
+#arrow{
+  position: absolute;
+  z-index: 2;
+  left: -133px;
+  top: 604px;
+}
+
+#bannerTap{
+  position: absolute;
+  z-index: 2;
+  left: 234px;
+  top: 866px;
+  opacity: 0;
+}
